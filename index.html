@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Helper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>College Helper</h1>
+    <p>Your simple college companion</p>
+</header>
+
+<div class="container">
+<h2>My Tasks</h2>
+<h2>Attendance Tracker</h2>
+<h2>Subject Attendance</h2>
+
+<div class="attendance-box">
+
+    <h3>C++</h3>
+    <input type="number" id="cppTotal" placeholder="Total classes">
+    <input type="number" id="cppAttended" placeholder="Attended classes">
+    <button onclick="calculateSubjectAttendance('cpp')">Calculate</button>
+    <p id="cppResult"></p>
+
+    <h3>Python</h3>
+    <input type="number" id="pythonTotal" placeholder="Total classes">
+    <input type="number" id="pythonAttended" placeholder="Attended classes">
+    <button onclick="calculateSubjectAttendance('python')">Calculate</button>
+    <p id="pythonResult"></p>
+
+    <h3>Data Structures</h3>
+    <input type="number" id="dsTotal" placeholder="Total classes">
+    <input type="number" id="dsAttended" placeholder="Attended classes">
+    <button onclick="calculateSubjectAttendance('ds')">Calculate</button>
+    <p id="dsResult"></p>
+
+</div>
+
+
+<input type="number" id="totalClasses" placeholder="Total classes">
+
+<input type="number" id="attendedClasses" placeholder="Attended classes">
+
+<button onclick="calculateAttendance()">Calculate</button>
+
+<p id="attendanceResult"></p>
+
+<h2>My Timetable</h2>
+
+<table>
+    <tr>
+        <th>Day</th>
+        <th>Subject</th>
+        <th>Time</th>
+    </tr>
+
+    <tr>
+        <td>Monday</td>
+        <td>C++</td>
+        <td>10:00 AM</td>
+    </tr>
+
+    <tr>
+        <td>Tuesday</td>
+        <td>Python</td>
+        <td>11:00 AM</td>
+    </tr>
+
+    <tr>
+        <td>Wednesday</td>
+        <td>Data Structures</td>
+        <td>10:00 AM</td>
+    </tr>
+
+    <tr>
+        <td>Thursday</td>
+        <td>Computer Systems</td>
+        <td>12:00 PM</td>
+    </tr>
+
+    <tr>
+        <td>Friday</td>
+        <td>C++</td>
+        <td>10:00 AM</td>
+    </tr>
+</table>
+
+
+<input type="text" id="taskInput" placeholder="Enter your task">
+
+<button onclick="addTask()">Add Task</button>
+
+<ul id="taskList"></ul>
+
+
+    <h2>My Subjects</h2>
+
+    <div class="subjects">
+
+
+        <button onclick="showSubject('C++')">C++</button>
+
+        <button onclick="showSubject('Python')">Python</button>
+
+        <button onclick="showSubject('Data Structures')">
+            Data Structures
+        </button>
+
+        <button onclick="showSubject('Computer Systems')">
+            Computer Systems
+        </button>
+
+    </div>
+
+    <p id="message"></p>
+
+    <h2 id="subjectTitle"></h2>
+
+    <ul id="topics"></ul>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+  
